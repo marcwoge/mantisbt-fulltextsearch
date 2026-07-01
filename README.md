@@ -2,7 +2,7 @@
 
 **🇬🇧 English** · [🇩🇪 Deutsch](README.de.md)
 
-[![License: GPL-2.0](https://img.shields.io/badge/License-GPL--2.0-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![MantisBT: ≥2.25.0](https://img.shields.io/badge/MantisBT-%E2%89%A52.25.0-brightgreen.svg)](https://www.mantisbt.org/)
 ![Status: Active](https://img.shields.io/badge/Status-Active-success.svg)
 
@@ -110,5 +110,6 @@ contributing code, follow the existing style (MantisBT conventions, PHP
 
 ## License
 
-Released under **GPL-2.0-only** — compatible with the MantisBT core. See
-[LICENSE](LICENSE) for the full text.
+Released under the **MIT License** — a permissive, GPL-compatible license, so
+the plugin works fine alongside the GPL-2.0 MantisBT core. See [LICENSE](LICENSE)
+for the full text.

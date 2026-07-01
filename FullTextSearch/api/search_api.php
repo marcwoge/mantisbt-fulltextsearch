@@ -1,20 +1,11 @@
 <?php
 # FullTextSearch - Full-text search plugin for MantisBT
-# Copyright (C) marcwoge <marc.woge@googlemail.com>
+# Copyright (c) 2026 Marc-Philipp Woge
 #
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License version 2 as
-# published by the Free Software Foundation.
+# Licensed under the MIT License. See the LICENSE file in the project root
+# for the full license text.
 #
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <https://www.gnu.org/licenses/>.
-#
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: MIT
 
 /**
  * Internal helper API for the FullTextSearch plugin.

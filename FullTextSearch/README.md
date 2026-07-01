@@ -1,6 +1,6 @@
 # FullTextSearch — MantisBT Plugin
 
-![License: GPL-2.0](https://img.shields.io/badge/License-GPL--2.0-blue.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 ![MantisBT: ≥2.25.0](https://img.shields.io/badge/MantisBT-%E2%89%A52.25.0-brightgreen.svg)
 ![Status: Active](https://img.shields.io/badge/Status-Active-success.svg)
 
@@ -99,8 +99,10 @@ Stil (MantisBT-Konventionen, PHP 7.4-kompatibel, keine externen Abhängigkeiten)
 
 ### Lizenz
 
-Veröffentlicht unter der **GPL-2.0-only** — kompatibel mit dem MantisBT-Kern. Den
-vollständigen Lizenztext finden Sie in der Datei [LICENSE](LICENSE).
+Veröffentlicht unter der **MIT-Lizenz** — eine permissive, GPL-kompatible Lizenz;
+das Plugin funktioniert daher problemlos mit dem GPL-2.0-lizenzierten
+MantisBT-Kern. Den vollständigen Lizenztext finden Sie in der Datei
+[LICENSE](LICENSE).
 
 ---
 
@@ -192,5 +194,6 @@ repository `mantisbt-fulltextsearch`. When contributing code, follow the existin
 
 ### License
 
-Released under **GPL-2.0-only** — compatible with the MantisBT core. See the
-[LICENSE](LICENSE) file for the full license text.
+Released under the **MIT License** — a permissive, GPL-compatible license, so the
+plugin works fine alongside the GPL-2.0 MantisBT core. See the [LICENSE](LICENSE)
+file for the full license text.

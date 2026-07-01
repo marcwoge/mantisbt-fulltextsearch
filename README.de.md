@@ -2,7 +2,7 @@
 
 [🇬🇧 English](README.md) · **🇩🇪 Deutsch**
 
-[![Lizenz: GPL-2.0](https://img.shields.io/badge/Lizenz-GPL--2.0-blue.svg)](LICENSE)
+[![Lizenz: MIT](https://img.shields.io/badge/Lizenz-MIT-blue.svg)](LICENSE)
 [![MantisBT: ≥2.25.0](https://img.shields.io/badge/MantisBT-%E2%89%A52.25.0-brightgreen.svg)](https://www.mantisbt.org/)
 ![Status: Aktiv](https://img.shields.io/badge/Status-Aktiv-success.svg)
 
@@ -117,5 +117,6 @@ keine externen Abhängigkeiten). Eine manuelle
 
 ## Lizenz
 
-Veröffentlicht unter **GPL-2.0-only** — kompatibel mit dem MantisBT-Kern. Den
-vollständigen Text finden Sie in der Datei [LICENSE](LICENSE).
+Veröffentlicht unter der **MIT-Lizenz** — eine permissive, GPL-kompatible Lizenz;
+das Plugin funktioniert daher problemlos mit dem GPL-2.0-lizenzierten
+MantisBT-Kern. Den vollständigen Text finden Sie in der Datei [LICENSE](LICENSE).
