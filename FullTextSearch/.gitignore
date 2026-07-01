@@ -1,0 +1,19 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# PHP / Composer (this plugin has no dependencies, but keep the standard ignores)
+vendor/
+composer.phar
+composer.lock
+
+# Local config / secrets
+*.local
+config_inc.php
+
+# Logs
+*.log

@@ -1,0 +1,34 @@
+name: Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: PHP ${{ matrix.php }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php: [ '7.4', '8.0', '8.1', '8.2', '8.3' ]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          coverage: none
+
+      - name: Lint PHP and language files
+        run: |
+          rc=0
+          for f in $(find FullTextSearch \( -name '*.php' -o -name '*.txt' \)); do
+            out=$(php -l "$f") || { echo "$out"; rc=1; }
+          done
+          if [ $rc -eq 0 ]; then echo "No syntax errors."; fi
+          exit $rc

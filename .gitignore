@@ -1,0 +1,17 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# PHP
+vendor/
+composer.lock
+
+# Local config / secrets
+*.local
+
+# Claude Code local session data
+.claude/

@@ -1,0 +1,45 @@
+# Local MantisBT sandbox for trying out the FullTextSearch plugin.
+#
+#   docker compose up -d --build
+#   -> MantisBT : http://localhost:8989   (finish the installer once)
+#   -> Mailpit  : http://localhost:8025   (catches every outgoing e-mail)
+#
+# See docker/README.md for the step-by-step walkthrough.
+
+services:
+  db:
+    image: mariadb:10.11
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: bugtracker
+      MARIADB_USER: mantisbt
+      MARIADB_PASSWORD: mantisbt
+    volumes:
+      - mantis_db:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  mantis:
+    build: ./docker
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8989:80"
+    volumes:
+      # Mount the plugin straight into MantisBT's plugins directory.
+      - ./FullTextSearch:/var/www/html/plugins/FullTextSearch
+      # Pre-baked configuration (DB + Mailpit).
+      - ./docker/config_inc.php:/var/www/html/config/config_inc.php
+
+  mailpit:
+    image: axllent/mailpit:latest
+    ports:
+      - "8025:8025"   # web UI
+      - "1025:1025"   # SMTP
+
+volumes:
+  mantis_db:

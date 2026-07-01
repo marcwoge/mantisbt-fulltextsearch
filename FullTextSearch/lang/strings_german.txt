@@ -1,0 +1,69 @@
+<?php
+# FullTextSearch - Full-text search plugin for MantisBT
+# Copyright (C) marcwoge <marc.woge@googlemail.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License version 2 as
+# published by the Free Software Foundation.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+#
+# SPDX-License-Identifier: GPL-2.0-only
+#
+# MantisBT registriert jeden $s_<name>-String unter dem aus dem Plugin-
+# Verzeichnisnamen abgeleiteten Sprachschluessel: plugin_lang_get( 'X' ) wird
+# zur Variable $s_plugin_FullTextSearch_X aufgeloest. Die im Spec geforderten
+# Schluesselnamen bleiben daher als zweite Haelfte jedes Variablennamens
+# erhalten, z. B. plugin_lang_get( 'plugin_fulltextsearch_menu_label' ).
+
+# Plugin-Metadaten (von register() verwendet).
+$s_plugin_FullTextSearch_title       = 'Volltextsuche';
+$s_plugin_FullTextSearch_description = 'Erweitert MantisBT um eine echte Volltextsuche &uuml;ber alle Ticketfelder, einschlie&szlig;lich Zusammenfassung, Beschreibung, benutzerdefinierte Felder und Notizen.';
+
+# Navigation und Seitenkopf.
+$s_plugin_FullTextSearch_plugin_fulltextsearch_menu_label         = 'Volltextsuche';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_page_title         = 'Volltextsuche';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_search_placeholder = 'Suchbegriff(e) eingeben...';
+
+# Formularbeschriftungen.
+$s_plugin_FullTextSearch_plugin_fulltextsearch_label_project      = 'Projekt';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_label_all_projects = 'Alle Projekte';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_label_search_in    = 'Suchen in';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_cb_summary         = 'Zusammenfassung';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_cb_description     = 'Beschreibung';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_cb_custom_fields   = 'Benutzerdefinierte Felder';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_cb_bugnotes        = 'Notizen';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_label_status       = 'Status';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_label_all_statuses = 'Leer lassen, um alle Status zu durchsuchen.';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_label_per_page     = 'Ergebnisse pro Seite';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_btn_search         = 'Suchen';
+
+# Ergebnisse.
+$s_plugin_FullTextSearch_plugin_fulltextsearch_results_count       = '%1$d Treffer f&uuml;r &raquo;%2$s&laquo;';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_results_none        = 'Keine Tickets entsprechen Ihrer Suche.';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_col_id              = 'ID';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_col_project         = 'Projekt';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_col_status          = 'Status';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_col_summary         = 'Zusammenfassung';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_col_reporter        = 'Melder';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_col_updated         = 'Zuletzt aktualisiert';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_match_context_label = 'Treffer';
+
+# Hinweise und Fehler.
+$s_plugin_FullTextSearch_plugin_fulltextsearch_tip_phrase_search = 'Tipp: Eine exakte Wortgruppe in doppelte Anf&uuml;hrungszeichen setzen, z.&#160;B. "Login Fehler". Mehrere W&ouml;rter werden mit UND verkn&uuml;pft.';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_error_empty_query = 'Bitte geben Sie mindestens einen Suchbegriff ein.';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_error_db          = 'Die Suche konnte aufgrund eines Datenbankfehlers nicht abgeschlossen werden.';
+
+# Feldbeschriftungen f&uuml;r die Trefferkontext-Liste.
+$s_plugin_FullTextSearch_field_summary    = 'Zusammenfassung';
+$s_plugin_FullTextSearch_field_description = 'Beschreibung';
+$s_plugin_FullTextSearch_field_steps      = 'Schritte zur Reproduktion';
+$s_plugin_FullTextSearch_field_additional = 'Zus&auml;tzliche Informationen';
+$s_plugin_FullTextSearch_field_custom     = 'Benutzerdefiniertes Feld';
+$s_plugin_FullTextSearch_field_bugnote    = 'Notiz';

@@ -1,0 +1,69 @@
+<?php
+# FullTextSearch - Full-text search plugin for MantisBT
+# Copyright (C) marcwoge <marc.woge@googlemail.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License version 2 as
+# published by the Free Software Foundation.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+#
+# SPDX-License-Identifier: GPL-2.0-only
+#
+# MantisBT registers each $s_<name> string under the language key derived from
+# the plugin's directory name: plugin_lang_get( 'X' ) resolves to the variable
+# $s_plugin_FullTextSearch_X. The spec's required key names (the part after the
+# plugin prefix) are therefore preserved verbatim as the second half of each
+# variable name below, e.g. plugin_lang_get( 'plugin_fulltextsearch_menu_label' ).
+
+# Plugin metadata (used by register()).
+$s_plugin_FullTextSearch_title       = 'Full-Text Search';
+$s_plugin_FullTextSearch_description = 'Adds a genuine full-text search across all issue fields, including summary, description, custom fields and bugnotes.';
+
+# Navigation and page chrome.
+$s_plugin_FullTextSearch_plugin_fulltextsearch_menu_label         = 'Full-Text Search';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_page_title         = 'Full-Text Search';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_search_placeholder = 'Enter search term(s)...';
+
+# Form labels.
+$s_plugin_FullTextSearch_plugin_fulltextsearch_label_project      = 'Project';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_label_all_projects = 'All Projects';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_label_search_in    = 'Search in';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_cb_summary         = 'Summary';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_cb_description     = 'Description';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_cb_custom_fields   = 'Custom Fields';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_cb_bugnotes        = 'Bugnotes';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_label_status       = 'Status';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_label_all_statuses = 'Leave empty to search all statuses.';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_label_per_page     = 'Results per page';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_btn_search         = 'Search';
+
+# Results.
+$s_plugin_FullTextSearch_plugin_fulltextsearch_results_count       = '%1$d result(s) for &raquo;%2$s&laquo;';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_results_none        = 'No issues matched your search.';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_col_id              = 'ID';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_col_project         = 'Project';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_col_status          = 'Status';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_col_summary         = 'Summary';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_col_reporter        = 'Reporter';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_col_updated         = 'Last Updated';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_match_context_label = 'Matches';
+
+# Hints and errors.
+$s_plugin_FullTextSearch_plugin_fulltextsearch_tip_phrase_search = 'Tip: wrap an exact phrase in double quotes, e.g. "login error". Multiple words are combined with AND.';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_error_empty_query = 'Please enter at least one search term.';
+$s_plugin_FullTextSearch_plugin_fulltextsearch_error_db          = 'The search could not be completed due to a database error.';
+
+# Match-context field labels (used for the collapsed snippet list).
+$s_plugin_FullTextSearch_field_summary    = 'Summary';
+$s_plugin_FullTextSearch_field_description = 'Description';
+$s_plugin_FullTextSearch_field_steps      = 'Steps to Reproduce';
+$s_plugin_FullTextSearch_field_additional = 'Additional Information';
+$s_plugin_FullTextSearch_field_custom     = 'Custom Field';
+$s_plugin_FullTextSearch_field_bugnote    = 'Bugnote';
