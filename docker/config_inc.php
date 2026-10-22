@@ -7,12 +7,13 @@ $g_hostname      = 'db';
 $g_db_type       = 'mysqli';
 $g_database_name = 'bugtracker';
 $g_db_username   = 'mantisbt';
-$g_db_password   = 'mantisbt';
+# Password comes from .env via docker-compose.yml (MANTIS_DB_PASSWORD).
+$g_db_password   = (string) getenv('MANTIS_DB_PASSWORD');
 
 # --- General --------------------------------------------------------------
 $g_default_timezone   = 'Europe/Berlin';
-# Required by MantisBT (>= 16 chars). Fixed value is fine for a local sandbox.
-$g_crypto_master_salt = '0a9f3c7e1b6d4a8f2e5c0b7d9a1f4e6c8b3d5a7f9e2c4b6d8a0f1e3c5b7d9a2f';
+# Required by MantisBT (>= 16 chars); set MANTIS_CRYPTO_MASTER_SALT in .env.
+$g_crypto_master_salt = (string) getenv('MANTIS_CRYPTO_MASTER_SALT');
 
 # --- E-mail: route everything to the Mailpit catcher ----------------------
 # 2 = PHPMAILER_METHOD_SMTP
