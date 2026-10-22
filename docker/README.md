@@ -10,8 +10,8 @@ E-Mails abfängt (es wird also nichts wirklich verschickt).
 | Mailpit (E-Mails ansehen) | http://localhost:8025 | – |
 | MariaDB | intern `db:3306` | `mantisbt` / `MANTIS_DB_PASSWORD` aus `.env` |
 
-> Reines Test-Setup. Die Zugangsdaten/Salt in `docker-compose.yml` und
-> `config_inc.php` sind absichtlich simpel – **nicht in Produktion verwenden.**
+> Reines Test-Setup. DB-Passwörter und Salt kommen aus der lokalen `.env`
+> (Vorlage `.env.example`, nicht eingecheckt) – **nicht in Produktion verwenden.**
 
 ## Starten
 
