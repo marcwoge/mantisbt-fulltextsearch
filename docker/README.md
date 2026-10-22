@@ -8,7 +8,7 @@ E-Mails abfängt (es wird also nichts wirklich verschickt).
 | --- | --- | --- |
 | MantisBT | http://localhost:8989 | `administrator` / `root` |
 | Mailpit (E-Mails ansehen) | http://localhost:8025 | – |
-| MariaDB | intern `db:3306` | `mantisbt` / `mantisbt` |
+| MariaDB | intern `db:3306` | `mantisbt` / `MANTIS_DB_PASSWORD` aus `.env` |
 
 > Reines Test-Setup. Die Zugangsdaten/Salt in `docker-compose.yml` und
 > `config_inc.php` sind absichtlich simpel – **nicht in Produktion verwenden.**
@@ -18,15 +18,18 @@ E-Mails abfängt (es wird also nichts wirklich verschickt).
 Aus dem Projekt-Stammverzeichnis (eine Ebene über `docker/`):
 
 ```bash
+cp .env.example .env   # einmalig; danach eigene Passwörter/Salt eintragen
 docker compose up -d --build
 ```
+
+Die Ports sind nur auf `127.0.0.1` gebunden (nicht im LAN erreichbar).
 
 Beim ersten Start wird das MantisBT-Image gebaut (lädt das offizielle Release
 herunter). Danach **einmalig** den Installer abschließen:
 
 1. http://localhost:8989/admin/install.php öffnen.
 2. Die Datenbankfelder sind bereits aus `docker/config_inc.php` vorbefüllt
-   (Host `db`, DB `bugtracker`, Benutzer `mantisbt`/`mantisbt`).
+   (Host `db`, DB `bugtracker`, Benutzer `mantisbt`, Passwort aus `.env`).
 3. Auf **„Install/Upgrade Database"** klicken → die Tabellen werden angelegt.
 4. Fertig. Anmelden mit `administrator` / `root`.
 
