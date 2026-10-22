@@ -1,7 +1,7 @@
 # MantisBT test image for trying out the Open Ticket Reminder plugin.
 FROM php:8.2.35-apache
 
-ENV MANTIS_VERSION=2.28.3
+ENV MANTIS_VERSION=2.28.4
 
 # PHP extensions required by MantisBT (mysqli, gd, mbstring, zip).
 RUN apt-get update \

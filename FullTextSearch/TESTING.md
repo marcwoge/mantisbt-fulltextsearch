@@ -2,7 +2,7 @@
 
 Manual test cases for verifying the plugin in a running MantisBT 2.25+ instance.
 Each case lists the steps and the expected result. The plugin in this repository
-was validated end-to-end against MantisBT 2.28.3 (see the bundled Docker setup in
+was validated end-to-end against MantisBT 2.28.3 (test image now on 2.28.4) (see the bundled Docker setup in
 `../docker/`).
 
 > Suggested fixtures: one project with at least one custom field of type *String*
