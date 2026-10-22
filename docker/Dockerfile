@@ -1,5 +1,5 @@
 # MantisBT test image for trying out the Open Ticket Reminder plugin.
-FROM php:8.2-apache
+FROM php:8.2.35-apache
 
 ENV MANTIS_VERSION=2.28.3
 
