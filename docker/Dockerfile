@@ -1,6 +1,6 @@
 # MantisBT test image for trying out the FullTextSearch plugin.
 # PHP 8.4 (security support until 2028-12-31); 8.2 reaches EOL on 2026-12-31.
-FROM php:8.4.27-apache
+FROM php:8.5.0-apache
 
 ENV MANTIS_VERSION=2.28.4
 # SHA-256 of mantisbt-${MANTIS_VERSION}.tar.gz, taken from the official
