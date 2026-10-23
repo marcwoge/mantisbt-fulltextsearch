@@ -2,12 +2,24 @@ name: Docker build
 
 on:
   pull_request:
-  push:
-    branches: [ main ]
+    paths:
+      - '**/Dockerfile*'
+      - '**/*.dockerfile'
+      - '**/.dockerignore'
+      - '**/docker-compose*.yml'
+      - '**/docker-compose*.yaml'
+      - '**/compose*.yml'
+      - '**/compose*.yaml'
+      - 'docker/**'
+      - '.github/workflows/docker-build.yml'
   workflow_dispatch:
 
 permissions:
   contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
