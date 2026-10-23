@@ -9,7 +9,7 @@
 
 services:
   db:
-    image: mariadb:10.11.19
+    image: mariadb:13.0.2
     environment:
       MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD:?set MARIADB_ROOT_PASSWORD in .env (see .env.example)}
       MARIADB_DATABASE: bugtracker
