@@ -41,7 +41,7 @@ services:
       - ./docker/config_inc.php:/var/www/html/config/config_inc.php
 
   mailpit:
-    image: axllent/mailpit:v1.31.6
+    image: axllent/mailpit:v1.32.0
     ports:
       - "127.0.0.1:8025:8025"   # web UI
       - "127.0.0.1:1025:1025"   # SMTP
