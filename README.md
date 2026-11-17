@@ -44,7 +44,7 @@ search itself — when the user lacks permission.
 ## Requirements
 
 - MantisBT **2.25.0** or newer
-- PHP **7.4+** (compatible up to and including PHP 8.x)
+- PHP **8.3+** (CI-tested with PHP 8.3, 8.4 and 8.5)
 - No external dependencies, no Composer, no npm
 
 ## Installation
@@ -105,7 +105,7 @@ for the full walkthrough.
 
 Contributions are welcome — please file issues and pull requests. When
 contributing code, follow the existing style (MantisBT conventions, PHP
-7.4-compatible, no external dependencies). A manual
+8.3-compatible, no external dependencies). A manual
 [testing checklist](FullTextSearch/TESTING.md) is included.
 
 ## License

@@ -45,7 +45,7 @@ ausreichender Berechtigung.
 ### Voraussetzungen
 
 - MantisBT **2.25.0** oder neuer
-- PHP **7.4+** (kompatibel bis einschließlich PHP 8.x)
+- PHP **8.3+** (in der CI geprüft mit PHP 8.3, 8.4 und 8.5)
 - Keine externen Abhängigkeiten, kein Composer, kein npm
 
 ### Installation
@@ -95,7 +95,7 @@ bestehenden MantisBT-Zugriffsrechten und der aktuellen Projektauswahl.
 
 Beiträge sind willkommen. Bitte Issues und Pull Requests im GitHub-Repository
 `mantisbt-fulltextsearch` einreichen. Halten Sie sich beim Code an den vorhandenen
-Stil (MantisBT-Konventionen, PHP 7.4-kompatibel, keine externen Abhängigkeiten).
+Stil (MantisBT-Konventionen, PHP-8.3-kompatibel, keine externen Abhängigkeiten).
 
 ### Lizenz
 
@@ -142,7 +142,7 @@ bugnotes appear only when the user has sufficient permission.
 ### Requirements
 
 - MantisBT **2.25.0** or newer
-- PHP **7.4+** (compatible up to and including PHP 8.x)
+- PHP **8.3+** (CI-tested with PHP 8.3, 8.4 and 8.5)
 - No external dependencies, no Composer, no npm
 
 ### Installation
@@ -190,7 +190,7 @@ existing MantisBT access controls and the currently selected project.
 
 Contributions are welcome. Please file issues and pull requests in the GitHub
 repository `mantisbt-fulltextsearch`. When contributing code, follow the existing style
-(MantisBT conventions, PHP 7.4-compatible, no external dependencies).
+(MantisBT conventions, PHP 8.3-compatible, no external dependencies).
 
 ### License
 
