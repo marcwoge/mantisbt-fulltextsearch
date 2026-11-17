@@ -50,7 +50,7 @@ fehlt.
 ## Voraussetzungen
 
 - MantisBT **2.25.0** oder neuer
-- PHP **8.3+** (in der CI geprüft mit PHP 8.3, 8.4 und 8.5)
+- PHP **7.4+** (in der CI geprüft mit PHP 8.3, 8.4 und 8.5)
 - Keine externen Abhängigkeiten, kein Composer, kein npm
 
 ## Installation
@@ -111,7 +111,7 @@ Anleitung steht in [`docker/README.md`](docker/README.md).
 ## Beitragen
 
 Beiträge sind willkommen — bitte Issues und Pull Requests einreichen. Beim Code
-bitte den vorhandenen Stil einhalten (MantisBT-Konventionen, PHP-8.3-kompatibel,
+bitte den vorhandenen Stil einhalten (MantisBT-Konventionen, PHP-7.4-kompatibel,
 keine externen Abhängigkeiten). Eine manuelle
 [Test-Checkliste](FullTextSearch/TESTING.md) liegt bei.
 
