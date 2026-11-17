@@ -44,7 +44,7 @@ search itself — when the user lacks permission.
 ## Requirements
 
 - MantisBT **2.25.0** or newer
-- PHP **7.4+** (compatible up to and including PHP 8.x)
+- PHP **7.4+** (CI-tested with PHP 8.3, 8.4 and 8.5)
 - No external dependencies, no Composer, no npm
 
 ## Installation

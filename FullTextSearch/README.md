@@ -45,7 +45,7 @@ ausreichender Berechtigung.
 ### Voraussetzungen
 
 - MantisBT **2.25.0** oder neuer
-- PHP **7.4+** (kompatibel bis einschließlich PHP 8.x)
+- PHP **7.4+** (in der CI geprüft mit PHP 8.3, 8.4 und 8.5)
 - Keine externen Abhängigkeiten, kein Composer, kein npm
 
 ### Installation
@@ -142,7 +142,7 @@ bugnotes appear only when the user has sufficient permission.
 ### Requirements
 
 - MantisBT **2.25.0** or newer
-- PHP **7.4+** (compatible up to and including PHP 8.x)
+- PHP **7.4+** (CI-tested with PHP 8.3, 8.4 and 8.5)
 - No external dependencies, no Composer, no npm
 
 ### Installation

@@ -50,7 +50,7 @@ fehlt.
 ## Voraussetzungen
 
 - MantisBT **2.25.0** oder neuer
-- PHP **7.4+** (kompatibel bis einschließlich PHP 8.x)
+- PHP **7.4+** (in der CI geprüft mit PHP 8.3, 8.4 und 8.5)
 - Keine externen Abhängigkeiten, kein Composer, kein npm
 
 ## Installation
